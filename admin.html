@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Система управления многоэтапными соревнованиями">
+    <title>Админка — Управление соревнованием</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <a class="brand" href="index.html">
+            <div class="brand-mark"></div>
+            <div><div class="brand-title">Система управления</div><div class="brand-subtitle">соревнования</div></div>
+        </a>
+        <nav class="nav" aria-label="Основная навигация">
+    <a href="index.html">Главная</a>
+    <a href="list.html">Участники</a>
+    <a href="stages.html">Этапы</a>
+    <a href="results.html">Рейтинг</a>
+    <a class="active" href="admin.html">Админка</a>
+</nav>
+
+    </div>
+</header>
+<main><div class="container">
+<h1 class="page-title">Администрирование</h1>
+<p class="page-lead">Интерфейс управляющего соревнованием для добавления участников и ввода баллов.</p>
+
+
+<section class="admin-grid">
+    <div class="card">
+        <h2>Добавить участника</h2>
+        <form action="#" method="post">
+            <div class="form-row"><label for="fio">ФИО</label><input id="fio" name="fio" type="text" placeholder="Фамилия Имя Отчество"></div>
+            <div class="form-row"><label for="admin-group">Группа</label><input id="admin-group" name="group" type="text" placeholder="П-311"></div>
+            <div class="form-row"><label for="admin-speciality">Специальность</label><select id="admin-speciality" name="speciality"><option>Программирование</option><option>Правоведение</option><option>Логистика</option><option>Экономика</option></select></div>
+            <button class="btn pink" type="submit">Добавить участника</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h2>Ввод результатов</h2>
+        <form action="#" method="post">
+            <div class="form-row"><label for="participant">Участник</label><select id="participant" name="participant"><option>Иванов Артём Сергеевич</option><option>Петров Максим Андреевич</option><option>Сидорова Анна Игоревна</option><option>Кузнецов Дмитрий Олегович</option></select></div>
+            <div class="form-row"><label for="stage">Этап</label><select id="stage" name="stage"><option>Этап 1 — 5 октября</option><option>Этап 2 — 7 октября</option><option>Этап 3 — 9 октября</option></select></div>
+            <div class="form-row"><label for="score">Количество баллов</label><input id="score" name="score" type="number" min="0" placeholder="0"></div>
+            <button class="btn" type="submit">Сохранить результат</button>
+        </form>
+    </div>
+</section>
+
+<section class="section">
+    <div class="card">
+        <h2>Последние введённые результаты</h2>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Участник</th><th>Этап</th><th>Баллы</th><th>Статус</th></tr></thead>
+                <tbody>
+                    <tr><td>Иванов Артём Сергеевич</td><td>Этап 3</td><td class="points">34</td><td><span class="badge green">Введено</span></td></tr>
+                    <tr><td>Петров Максим Андреевич</td><td>Этап 3</td><td class="points">32</td><td><span class="badge green">Введено</span></td></tr>
+                    <tr><td>Сидорова Анна Игоревна</td><td>Этап 3</td><td class="points">30</td><td><span class="badge green">Введено</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+</div></main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <div class="footer-logo"></div>
+        </div>
+        <div>
+            <div class="footer-title">Адрес</div>
+            224030, Республика Беларусь,<br>
+            Брест, пл. Свободы, 13
+        </div>
+        <div>
+            <div class="footer-title">Телефоны</div>
+            Тел./факс: 8 0162 53 67 27<br>
+            Тел. +375 33 622 67 27
+        </div>
+        <div>
+            <div class="footer-title">Контакты</div>
+            E-mail: brest@kbp.by
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

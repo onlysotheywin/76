@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Система управления многоэтапными соревнованиями">
+    <title>Список участников</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <a class="brand" href="index.html">
+            <div class="brand-mark"></div>
+            <div><div class="brand-title">Система управления</div><div class="brand-subtitle">соревнования</div></div>
+        </a>
+        <nav class="nav" aria-label="Основная навигация">
+    <a href="index.html">Главная</a>
+    <a class="active" href="list.html">Участники</a>
+    <a href="stages.html">Этапы</a>
+    <a href="results.html">Рейтинг</a>
+    <a href="admin.html">Админка</a>
+</nav>
+
+    </div>
+</header>
+<main><div class="container">
+<h1 class="page-title">Список участников</h1>
+
+<div class="filter-box">
+    <div class="filters">
+        <div><label for="search">Поиск по ФИО</label><input id="search" type="search" placeholder="Например, Иванов Иван"></div>
+        <div><label for="group">Группа</label><select id="group"><option>Все группы</option><option>П-311</option><option>П-321</option><option>П-331</option><option>П-341</option></select></div>
+        <div><label for="speciality">Специальность</label><select id="speciality"><option>Все специальности</option><option>Программирование</option><option>Правоведение</option><option>Логистика</option><option>Экономика</option></select></div>
+        <div><label for="sort">Сортировка</label><select id="sort"><option>По алфавиту</option><option>Баллы: по возрастанию</option><option>Баллы: по убыванию</option></select></div>
+    </div>
+</div>
+
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>№</th><th>ФИО</th><th>Группа</th><th>Специальность</th><th>Этап 1</th><th>Этап 2</th><th>Этап 3</th><th>Всего</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>Иванов Артём Сергеевич</strong></td><td>П-311</td><td>Программирование</td><td>28</td><td>31</td><td>34</td><td class="points">93</td></tr>
+<tr><td>2</td><td><strong>Петров Максим Андреевич</strong></td><td>П-321</td><td>Программирование</td><td>30</td><td>29</td><td>32</td><td class="points">91</td></tr>
+<tr><td>3</td><td><strong>Сидорова Анна Игоревна</strong></td><td>П-311</td><td>Программирование</td><td>27</td><td>31</td><td>30</td><td class="points">88</td></tr>
+<tr><td>4</td><td><strong>Кузнецов Дмитрий Олегович</strong></td><td>П-331</td><td>Программирование</td><td>26</td><td>28</td><td>29</td><td class="points">83</td></tr>
+<tr><td>5</td><td><strong>Смирнова Елена Викторовна</strong></td><td>П-321</td><td>Программирование</td><td>25</td><td>27</td><td>28</td><td class="points">80</td></tr>
+<tr><td>6</td><td><strong>Орлов Кирилл Павлович</strong></td><td>П-341</td><td>Программирование</td><td>23</td><td>25</td><td>26</td><td class="points">74</td></tr>
+<tr><td>7</td><td><strong>Морозова Полина Денисовна</strong></td><td>П-331</td><td>Программирование</td><td>22</td><td>24</td><td>25</td><td class="points">71</td></tr>
+<tr><td>8</td><td><strong>Волков Никита Романович</strong></td><td>П-341</td><td>Программирование</td><td>20</td><td>23</td><td>24</td><td class="points">67</td></tr>
+</tbody>
+</table>
+</div>
+</div></main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <div class="footer-logo"></div>
+        </div>
+        <div>
+            <div class="footer-title">Адрес</div>
+            224030, Республика Беларусь,<br>
+            Брест, пл. Свободы, 13
+        </div>
+        <div>
+            <div class="footer-title">Телефоны</div>
+            Тел./факс: 8 0162 53 67 27<br>
+            Тел. +375 33 622 67 27
+        </div>
+        <div>
+            <div class="footer-title">Контакты</div>
+            E-mail: brest@kbp.by
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
