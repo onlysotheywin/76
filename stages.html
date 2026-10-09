@@ -1,106 +1,12 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Система управления многоэтапными соревнованиями">
-    <title>Этапы соревнования</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="site-header">
-    <div class="header-inner">
-        <a class="brand" href="index.html">
-            <div class="brand-mark"></div>
-            <div><div class="brand-title">Система управления</div><div class="brand-subtitle">соревнования</div></div>
-        </a>
-        <nav class="nav" aria-label="Основная навигация">
-    <a href="index.html">Главная</a>
-    <a href="list.html">Участники</a>
-    <a class="active" href="stages.html">Этапы</a>
-    <a href="results.html">Рейтинг</a>
-    <a href="admin.html">Админка</a>
-</nav>
-
-    </div>
-</header>
-<main><div class="container">
-<h1 class="page-title">Этапы соревнования</h1>
-<p class="page-lead">Программирование · 5–11 октября 2026 года.</p>
-
-<div class="stats">
-    <div class="stat"><div class="stat-value">3</div><div class="stat-label">этапа</div></div>
-    <div class="stat"><div class="stat-value">8</div><div class="stat-label">участников</div></div>
-    <div class="stat"><div class="stat-value">3</div><div class="stat-label">проходных места</div></div>
-    <div class="stat"><div class="stat-value">93</div><div class="stat-label">максимальный результат</div></div>
-</div>
-
-<section class="grid grid-3">
-    <article class="card">
-        <span class="badge pink">Этап 1</span>
-        <h2>Стартовый этап</h2>
-        <p class="date">Понедельник · 5 октября</p>
-        <p class="muted">Ввод результатов первого выступления участников.</p>
-        <div class="progress"><span style="width:100%"></span></div>
-        <p><strong>Завершён</strong></p>
-    </article>
-    <article class="card">
-        <span class="badge pink">Этап 2</span>
-        <h2>Основной этап</h2>
-        <p class="date">Среда · 7 октября</p>
-        <p class="muted">Ввод результатов второго выступления участников.</p>
-        <div class="progress"><span style="width:100%"></span></div>
-        <p><strong>Завершён</strong></p>
-    </article>
-    <article class="card">
-        <span class="badge pink">Этап 3</span>
-        <h2>Финальный этап</h2>
-        <p class="date">Пятница · 9 октября</p>
-        <p class="muted">Финальные результаты и определение проходящих участников.</p>
-        <div class="progress"><span style="width:100%"></span></div>
-        <p><strong>Завершён</strong></p>
-    </article>
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Этапы — Соревнования</title><link rel="stylesheet" href="style.css"></head><body><div id="header"></div>
+<main><div class="container"><div class="page-title"><div><div class="eyebrow">Ход соревнования</div><h1>Этапы соревнования</h1><p>Программирование · 5–11 октября 2026</p></div><span class="pill pill-pink">Текущая неделя</span></div>
+<div class="notice">Каждая специальность участвует в соревновании в течение одной недели. Этапы проводятся в понедельник, среду и пятницу.</div>
+<section class="stage-grid">
+<article class="stage-card"><span class="pill pill-green">Завершён</span><div class="stage-number">01</div><h3>Первый этап</h3><p>Понедельник, 5 октября 2026</p><p>Стартовый раунд. Подробные оценки по девяти критериям доступны в ведомости первого этапа.</p><div class="card-meta"><strong>10 участников</strong><span>·</span><span>30 баллов максимум</span></div><a class="button button-secondary" href="results.html">Посмотреть результаты ↗</a></article>
+<article class="stage-card" style="border-color:#f6b8c5"><span class="pill pill-pink">Текущий этап</span><div class="stage-number">02</div><h3>Второй этап</h3><p>Среда, 7 октября 2026</p><p>Ввод результатов выступлений и обновление промежуточного рейтинга.</p><div class="card-meta"><strong>10 участников</strong><span>·</span><span>Идёт обработка</span></div><a class="button button-primary" href="admin.html">Внести результаты ↗</a></article>
+<article class="stage-card"><span class="pill">Предстоит</span><div class="stage-number">03</div><h3>Финальный этап</h3><p>Пятница, 9 октября 2026</p><p>Финальные задания, итоговый подсчёт баллов и определение призёров.</p><div class="card-meta"><strong>10 участников</strong><span>·</span><span>Ожидается</span></div><a class="button button-secondary" href="results.html">Текущий рейтинг ↗</a></article>
 </section>
-
-<section class="section card">
-    <h2>Результаты текущего этапа</h2>
-    <div class="table-wrap">
-        <table>
-            <thead><tr><th>Место</th><th>Участник</th><th>Группа</th><th>Этап 1</th><th>Этап 2</th><th>Этап 3</th><th>Итог</th></tr></thead>
-            <tbody>
-                <tr class="top-1"><td class="rank">1</td><td>Иванов Артём Сергеевич</td><td>П-311</td><td>28</td><td>31</td><td>34</td><td class="points">93</td></tr>
-                <tr class="top-2"><td class="rank">2</td><td>Петров Максим Андреевич</td><td>П-321</td><td>30</td><td>29</td><td>32</td><td class="points">91</td></tr>
-                <tr class="top-3"><td class="rank">3</td><td>Сидорова Анна Игоревна</td><td>П-311</td><td>27</td><td>31</td><td>30</td><td class="points">88</td></tr>
-            </tbody>
-        </table>
-    </div>
-</section>
-
-<section class="section">
-    <div class="notice"><strong>Проходные места: 3.</strong> В следующий этап проходят участники, занявшие места с 1 по 3.</div>
-</section>
-</div></main>
-<footer class="site-footer">
-    <div class="container footer-grid">
-        <div>
-            <div class="footer-logo"></div>
-        </div>
-        <div>
-            <div class="footer-title">Адрес</div>
-            224030, Республика Беларусь,<br>
-            Брест, пл. Свободы, 13
-        </div>
-        <div>
-            <div class="footer-title">Телефоны</div>
-            Тел./факс: 8 0162 53 67 27<br>
-            Тел. +375 33 622 67 27
-        </div>
-        <div>
-            <div class="footer-title">Контакты</div>
-            E-mail: brest@kbp.by
-        </div>
-    </div>
-</footer>
-
-</body>
-</html>
+<div class="section-head"><div><div class="eyebrow">Правила подсчёта</div><h2>Как формируется рейтинг</h2><p>Прозрачная система начисления баллов.</p></div></div>
+<div class="competition-grid"><article class="card"><div class="competition-icon">＋</div><h3>Сумма баллов</h3><p class="lead" style="font-size:13px">Итог участника — сумма результатов всех завершённых этапов. После внесения баллов рейтинг пересчитывается.</p></article><article class="card"><div class="competition-icon">↗</div><h3>Проходные места</h3><p class="lead" style="font-size:13px">Количество участников, переходящих дальше, задаётся организатором. В этом макете это правило требует настройки в админке.</p></article></div>
+</div></main><div id="footer"></div><script src="layout.js"></script><script src="app.js"></script></body></html>
